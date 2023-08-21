@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const URL = "mern-stack-beta-seven.vercel.app";
+const URL = "flipkart-delta.vercel.app";
 
 export const authenticateSignup = async (data) => {
   try {
