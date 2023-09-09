@@ -4,7 +4,7 @@ import * as actionTypes from '../constants/productConstant';
 
 export const getProducts = () => async (dispatch) => {
     try {
-        const { data } = await axios.get(`https://flipkart-api-xi.vercel.app/products`);
+        const { data } = await axios.get('https://flipkart-api-xi.vercel.app/products');
         dispatch({ type: actionTypes.GET_PRODUCTS_SUCCESS, payload: data })
     } catch (error) {
         dispatch({ type: actionTypes.GET_PRODUCTS_FAIL, payload: error.message })
