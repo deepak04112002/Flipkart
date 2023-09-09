@@ -10,7 +10,7 @@ export const Connection= async (USERNAME,PASSWORD) => {
         console.log('Error while connecting with database', error.message);
     }
 }
-export default Connection;
+// export default Connection;
 
 
 

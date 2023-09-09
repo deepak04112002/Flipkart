@@ -13,9 +13,7 @@ app.use(cors());
 app.use(bodyParser.json({ extended: true }));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use('/', Router);
-app.get('/',(req,res)=>{
-    res.json("hello")
-  })
+
 
 const PORT = process.env.PORT || 8080;
 const USERNAME = "user";
@@ -24,4 +22,7 @@ const PASSWORD = "user";
 Connection(USERNAME,PASSWORD);
 
 app.listen(PORT, () => console.log(`server is running sucessfully on PORT ${PORT}`));
-DefaultData();
+// DefaultData();
+app.get('/',(req,res)=>{
+  res.json("hello")
+})
