@@ -24,4 +24,4 @@ const PASSWORD = "user";
 Connection(USERNAME,PASSWORD);
 
 app.listen(PORT, () => console.log(`server is running sucessfully on PORT ${PORT}`));
-// DefaultData();
+DefaultData();
